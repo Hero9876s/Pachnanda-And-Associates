@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800 bg-white;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-700 to-gray-800
+    text-white px-6 py-3 rounded-lg font-semibold
+    hover:from-blue-800 hover:to-gray-900
+    transition-all duration-200 shadow-lg
+    hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-blue-700 border-2 border-blue-700
+    px-6 py-3 rounded-lg font-semibold
+    hover:bg-gradient-to-r hover:from-blue-700 hover:to-gray-800
+    hover:text-white hover:border-transparent
+    transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-primary {
+    @apply text-3xl sm:text-4xl lg:text-5xl
+    font-bold mb-4
+    bg-gradient-to-r from-blue-700 to-gray-800
+    bg-clip-text text-transparent;
+  }
+
+  .heading-secondary {
+    @apply text-2xl sm:text-3xl lg:text-4xl
+    font-bold text-gray-800 mb-4;
+  }
+
+  .text-lead {
+    @apply text-lg sm:text-xl text-gray-600 leading-relaxed;
+  }
+}
+
+
+
+.nav a, .menu a { white-space: nowrap; }
