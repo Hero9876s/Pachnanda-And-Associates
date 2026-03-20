@@ -67,7 +67,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-blue-50 to-white section-padding">
+      <section className="bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-950 section-padding transition-colors duration-300">
         <div className="container-custom">
           <h1 className="heading-primary text-center mb-4">Get in Touch</h1>
           <p className="text-lead text-center max-w-3xl mx-auto mb-12">
@@ -78,14 +78,14 @@ s
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             
             {/* SEND MESSAGE */}
-            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
-              <h2 className="text-2xl font-semibold text-corporate-dark mb-6">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl flex flex-col border border-transparent dark:border-slate-800 transition-colors duration-300">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Send Us a Message
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-5 flex-1">
                 <div>
-                  <label className="block text-sm font-semibold mb-1">
+                  <label className="block text-sm font-semibold mb-1 dark:text-gray-300">
   Full Name <span className="text-red-500">*</span>
 </label>
 
@@ -94,13 +94,13 @@ s
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-corporate-blue"
+                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:text-white transition-colors"
                     placeholder="Enter your full name"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-1">
+                  <label className="block text-sm font-semibold mb-1 dark:text-gray-300">
   Contact Number <span className="text-red-500">*</span>
 </label>
 
@@ -109,13 +109,13 @@ s
                     value={formData.contactNumber}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-corporate-blue"
+                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:text-white transition-colors"
                     placeholder="Enter your contact number"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-1">
+                  <label className="block text-sm font-semibold mb-1 dark:text-gray-300">
   Email Address <span className="text-red-500">*</span>
 </label>
 
@@ -125,13 +125,13 @@ s
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-corporate-blue"
+                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:text-white transition-colors"
                     placeholder="Enter your email address"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-1">
+                  <label className="block text-sm font-semibold mb-1 dark:text-gray-300">
   Country <span className="text-red-500">*</span>
 </label>
 
@@ -140,7 +140,7 @@ s
                     value={formData.country}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-corporate-blue"
+                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:text-white transition-colors"
                   >
                     <option value="">Select your country</option>
                     <option>India</option>
@@ -158,7 +158,7 @@ s
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-1">
+                  <label className="block text-sm font-semibold mb-1 dark:text-gray-300">
   Query / Message <span className="text-red-500">*</span>
 </label>
 
@@ -168,7 +168,7 @@ s
                     value={formData.query}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-corporate-blue"
+                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:text-white transition-colors"
                     placeholder="Please describe your query"
                   />
                 </div>
@@ -187,40 +187,40 @@ s
             </div>
 
             {/* CONTACT INFO */}
-            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
-              <h2 className="text-2xl font-semibold text-corporate-dark mb-6">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl flex flex-col border border-transparent dark:border-slate-800 transition-colors duration-300">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Contact Information
               </h2>
 
               <div className="space-y-6 flex-1">
                 <div className="flex items-start gap-4">
-                  <div className="bg-corporate-blue/10 p-3 rounded-full">
-                    <FiPhone className="text-corporate-blue w-6 h-6" />
+                  <div className="bg-blue-50 dark:bg-blue-500/10 p-3 rounded-full">
+                    <FiPhone className="text-blue-600 dark:text-blue-400 w-6 h-6" />
                   </div>
                   <div>
-                    <p className="font-semibold">Phone</p>
-                    <p className="text-gray-700">+91 9419195996</p>
-                    <p className="text-gray-700">+91 7006341525</p>
+                    <p className="font-bold text-gray-900 dark:text-white">Phone</p>
+                    <p className="text-gray-700 dark:text-gray-300">+91 9419195996</p>
+                    <p className="text-gray-700 dark:text-gray-300">+91 7006341525</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-corporate-blue/10 p-3 rounded-full">
-                    <FiMail className="text-corporate-blue w-6 h-6" />
+                  <div className="bg-blue-50 dark:bg-blue-500/10 p-3 rounded-full">
+                    <FiMail className="text-blue-600 dark:text-blue-400 w-6 h-6" />
                   </div>
                   <div>
-                    <p className="font-semibold">Email</p>
-                    <p className="text-gray-700">pachnandas28@gmail.com</p>
+                    <p className="font-bold text-gray-900 dark:text-white">Email</p>
+                    <p className="text-gray-700 dark:text-gray-300">pachnandas28@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-corporate-blue/10 p-3 rounded-full">
-                    <FiMapPin className="text-corporate-blue w-6 h-6" />
+                  <div className="bg-blue-50 dark:bg-blue-500/10 p-3 rounded-full">
+                    <FiMapPin className="text-blue-600 dark:text-blue-400 w-6 h-6" />
                   </div>
                   <div>
-                    <p className="font-semibold">Office Address</p>
-                    <p className="text-gray-700">
+                    <p className="font-bold text-gray-900 dark:text-white">Office Address</p>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                       Plot No. 7/8, Adjoining SBI,<br />
                       Sector 6A, Trikuta Nagar,<br />
                       Jammu – 180020
@@ -233,8 +233,8 @@ s
           </div>
 
           {/* MAP – FULL WIDTH */}
-          <div className="mt-12 bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4">Find Us on Map</h3>
+          <div className="mt-12 bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl border border-transparent dark:border-slate-800 transition-colors duration-300">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Find Us on Map</h3>
 
             <div className="rounded-lg overflow-hidden border">
               <iframe

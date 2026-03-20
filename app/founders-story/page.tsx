@@ -9,9 +9,9 @@ export const metadata = {
 export default function FoundersStoryPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-white section-padding">
+      <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-white dark:from-slate-900 dark:via-slate-800 dark:to-slate-950 section-padding transition-colors duration-300">
         <div className="container-custom">
-<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-8 text-corporate-blue">
+<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-8 text-corporate-blue dark:text-blue-400">
   Founder's Story
 </h1>
 
@@ -22,25 +22,25 @@ export default function FoundersStoryPage() {
                 <h2 className="heading-secondary mb-6">
                   CA Sandeep Pachnanda, FCA, DISA
                 </h2>
-                <div className="space-y-4 text-gray-700">
+                <div className="space-y-4 text-gray-700 dark:text-gray-300">
                   <p className="text-lead">
                     Founder of Pachnanda and Associates, CA Sandeep Pachnanda brings over 25+ years of professional experience in chartered accountancy, taxation, and financial advisory services.
                   </p>
                   <div>
-                    <h3 className="font-semibold text-corporate-dark mb-2">Qualifications:</h3>
-                    <ul className="list-disc list-inside space-y-1 text-gray-700">
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Qualifications:</h3>
+                    <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
                       <li>Fellow Chartered Accountant (FCA)</li>
                       <li>Diploma in Information Systems Audit (DISA)</li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-corporate-dark mb-2">Experience & Approach:</h3>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Experience & Approach:</h3>
                     <p>
                       With a client-centric approach, CA Sandeep Pachnanda has guided over 2000 B2B clients through complex financial, taxation, and compliance challenges. His expertise spans income tax, GST, company law, statutory audits, and financial planning.
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-corporate-dark mb-2">Ethics & Transparency:</h3>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Ethics & Transparency:</h3>
                     <p>
                       The firm operates on principles of ethical practice, transparency, and fixed pricing with no hidden charges. Every client interaction is handled with professionalism and direct senior CA involvement.
                     </p>
@@ -50,14 +50,14 @@ export default function FoundersStoryPage() {
             </div>
 
             {/* Founder's Thinking */}
-            <div className="mt-12 bg-gradient-to-r from-corporate-blue to-[#163a5f] text-white p-8 rounded-lg shadow-xl border-l-4 border-yellow-400">
-              <h3 className="text-2xl font-semibold mb-4">
+            <div className="mt-12 bg-gradient-to-r from-corporate-blue to-[#163a5f] dark:from-slate-800 dark:to-slate-900 text-white p-8 rounded-2xl shadow-xl border-l-4 border-yellow-400 transition-colors duration-300">
+              <h3 className="text-2xl font-bold mb-4">
                 Founder's Thinking
               </h3>
-              <blockquote className="text-xl italic leading-relaxed">
+              <blockquote className="text-xl italic leading-relaxed text-gray-100">
                 "I believe in transparent, ethical, and growth-oriented financial guidance that empowers clients to make confident decisions."
               </blockquote>
-              <p className="mt-4 text-blue-100">
+              <p className="mt-4 text-blue-200">
                 — CA Sandeep Pachnanda, FCA, DISA
               </p>
             </div>

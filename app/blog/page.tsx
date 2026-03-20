@@ -38,7 +38,7 @@ const blogCategories = [
 export default function BlogPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-blue-50 to-white section-padding">
+      <section className="bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-950 section-padding transition-colors duration-300">
         <div className="container-custom">
           <h1 className="heading-primary text-center mb-4">
             Blog & Knowledge Hub
@@ -49,21 +49,21 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding bg-white dark:bg-slate-950 transition-colors duration-300">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {blogCategories.map((category) => (
               <div
                 key={category.id}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-corporate-blue"
+                className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-l-blue-600 dark:border-l-blue-500"
               >
                 <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4 ${category.color}`}>
                   {category.title}
                 </div>
-                <p className="text-gray-700 mb-6">{category.description}</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">{category.description}</p>
                 <Link
                   href={`/blog/${category.id}`}
-                  className="text-corporate-blue font-semibold hover:underline inline-flex items-center space-x-2"
+                  className="text-blue-600 dark:text-blue-400 font-bold hover:underline inline-flex items-center space-x-2"
                 >
                   <span>Explore Articles</span>
                   <FiArrowRight className="w-4 h-4" />
@@ -72,15 +72,15 @@ export default function BlogPage() {
             ))}
           </div>
 
-          <div className="bg-gray-50 p-8 rounded-lg text-center">
-            <h2 className="text-2xl font-semibold text-corporate-dark mb-4">
+          <div className="bg-gray-50 dark:bg-slate-900 p-8 rounded-2xl text-center shadow-xl border border-transparent dark:border-slate-800 transition-colors duration-300">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Articles Coming Soon
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               We're preparing valuable content to help you stay updated with the latest in taxation, compliance, and financial planning. Check back soon!
             </p>
-            <p className="text-sm text-gray-600">
-              In the meantime, feel free to <Link href="/contact" className="text-corporate-blue hover:underline">contact us</Link> with any questions.
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              In the meantime, feel free to <Link href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline">contact us</Link> with any questions.
             </p>
           </div>
         </div>

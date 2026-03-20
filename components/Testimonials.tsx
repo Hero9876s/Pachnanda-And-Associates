@@ -21,28 +21,28 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="container-custom">
         <h2 className="heading-secondary text-center mb-4">
           What Our Clients Say
         </h2>
-        <p className="text-center text-gray-600 mb-12 text-sm">
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-12 text-sm">
           Client feedback shared with consent.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md border-l-4 border-corporate-blue"
+              className="bg-gray-50 dark:bg-slate-900 p-6 rounded-2xl shadow-md border border-gray-100 dark:border-slate-800 border-l-4 border-l-corporate-blue dark:border-l-blue-500 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
-              <p className="text-gray-700 mb-4 italic">
+              <p className="text-gray-700 dark:text-gray-300 mb-6 italic leading-relaxed">
                 "{testimonial.text}"
               </p>
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-corporate-dark">
+              <div className="border-t border-gray-200 dark:border-slate-800 transition-colors pt-4">
+                <p className="font-bold text-gray-900 dark:text-white">
                   {testimonial.name}
                 </p>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
                   {testimonial.company}, {testimonial.location}
                 </p>
               </div>

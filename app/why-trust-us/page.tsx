@@ -48,7 +48,7 @@ const trustPoints = [
 export default function WhyTrustUsPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-blue-50 to-white section-padding">
+      <section className="bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-950 section-padding transition-colors duration-300">
         <div className="container-custom">
           <h1 className="heading-primary text-center mb-4">
             Why Trust Pachnanda and Associates
@@ -69,19 +69,19 @@ export default function WhyTrustUsPage() {
               return (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                  className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-transparent dark:border-slate-700"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="bg-corporate-blue bg-opacity-10 p-3 rounded-full">
-                        <Icon className="w-6 h-6 text-corporate-blue" />
+                      <div className="bg-blue-50 dark:bg-blue-500/10 p-3 rounded-full">
+                        <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-corporate-dark mb-2">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                         {point.title}
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300">
                         {point.description}
                       </p>
                     </div>
@@ -93,33 +93,33 @@ export default function WhyTrustUsPage() {
         </div>
       </section>
 
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 dark:bg-slate-950 section-padding transition-colors duration-300">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="heading-secondary text-center mb-8">
               Our Commitment to You
             </h2>
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <p className="text-lead text-gray-700 mb-6">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl border border-transparent dark:border-slate-800 transition-colors duration-300">
+              <p className="text-lead text-gray-700 dark:text-gray-300 mb-6">
                 At Pachnanda and Associates, we do not just provide services—we build lasting partnerships. Our approach is rooted in understanding your unique challenges and delivering solutions that drive real results.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <FiCheckCircle className="w-6 h-6 text-corporate-blue flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">
-                    <strong>Personalized Service:</strong> Every client receives tailored advice based on their specific situation and goals.
+                  <FiCheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
+                  <p className="text-gray-700 dark:text-gray-300">
+                    <strong className="text-gray-900 dark:text-white">Personalized Service:</strong> Every client receives tailored advice based on their specific situation and goals.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <FiCheckCircle className="w-6 h-6 text-corporate-blue flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">
-                    <strong>Proactive Communication:</strong> We keep you informed about deadlines, changes in regulations, and opportunities to optimize your financial position.
+                  <FiCheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
+                  <p className="text-gray-700 dark:text-gray-300">
+                    <strong className="text-gray-900 dark:text-white">Proactive Communication:</strong> We keep you informed about deadlines, changes in regulations, and opportunities to optimize your financial position.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <FiCheckCircle className="w-6 h-6 text-corporate-blue flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">
-                    <strong>Long-term Partnership:</strong> We are not just here for one-time services. We grow with you, providing ongoing support as your business evolves.
+                  <FiCheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
+                  <p className="text-gray-700 dark:text-gray-300">
+                    <strong className="text-gray-900 dark:text-white">Long-term Partnership:</strong> We are not just here for one-time services. We grow with you, providing ongoing support as your business evolves.
                   </p>
                 </div>
               </div>

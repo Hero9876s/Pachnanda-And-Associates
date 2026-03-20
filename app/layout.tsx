@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyContactButtons from '@/components/StickyContactButtons'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
   title: 'Pachnanda and Associates | Chartered Accountants | Jammu, J&K',
@@ -23,12 +24,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <StickyContactButtons />
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-white dark:bg-slate-950 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <StickyContactButtons />
+        </ThemeProvider>
       </body>
     </html>
   )

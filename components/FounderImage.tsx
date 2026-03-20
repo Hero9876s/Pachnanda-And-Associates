@@ -23,14 +23,6 @@ export default function FounderImage({
     large: 'w-80 h-96',
   }
 
-  useEffect(() => {
-    // Check if image exists
-    const img = new window.Image()
-    img.onload = () => setImageLoaded(true)
-    img.onerror = () => setImageError(true)
-    img.src = '/images/ca-sandeep-pachnanda-founder.png'
-  }, [])
-
   return (
     <div className={`${className}`}>
       <div className={`${sizeClasses[size]} relative mx-auto`}>
@@ -40,17 +32,17 @@ export default function FounderImage({
               src="/images/ca-sandeep-pachnanda-founder.png"
               alt="CA Sandeep Pachnanda, FCA, DISA – Founder of Pachnanda and Associates"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={`object-cover rounded-lg shadow-lg transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
               priority={size === 'large'}
               onError={() => setImageError(true)}
               onLoad={() => setImageLoaded(true)}
-              unoptimized
+              quality={85}
             />
             {!imageLoaded && !imageError && (
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-900 rounded-lg flex items-center justify-center animate-pulse">
                 <div className="text-center p-4">
-                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-corporate-blue mx-auto mb-2"></div>
-                  <div className="text-sm text-gray-600">Loading image...</div>
+                  <div className="animate-spin rounded-full h-10 w-10 border-4 border-blue-200 dark:border-slate-700 border-t-corporate-blue dark:border-t-blue-500 mx-auto"></div>
                 </div>
               </div>
             )}
@@ -60,21 +52,20 @@ export default function FounderImage({
             <div className="text-center p-4">
               <div className="text-4xl font-bold text-corporate-blue mb-2">CA</div>
               <div className="text-sm text-gray-600 mb-2">CA Sandeep Pachnanda</div>
-              <div className="text-xs text-gray-500">Please add image at: /public/images/ca-sandeep-pachnanda-founder.jpg</div>
             </div>
           </div>
         )}
       </div>
   {showCaption && (
-  <div className="mt-4 text-center">
-    <p className="text-gray-900 font-extrabold text-lg mb-1">
-      CA Sandeep Pachnanda, FCA, DISA
-    </p>
-    <p className="text-gray-950 font-bold text-base">
-      Founder – Pachnanda and Associates
-    </p>
-  </div>
-)}
+    <div className="mt-4 text-center">
+      <p className="font-extrabold text-lg mb-1 drop-shadow-sm">
+        CA Sandeep Pachnanda, FCA, DISA
+      </p>
+      <p className="font-bold text-base opacity-90 drop-shadow-sm">
+        Founder – Pachnanda and Associates
+      </p>
+    </div>
+  )}
 
 
     </div>

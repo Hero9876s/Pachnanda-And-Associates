@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-corporate-dark text-white">
+    <footer className="bg-[#0f172a] dark:bg-slate-950 text-white transition-colors duration-300">
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-12 pt-8">
+        <div className="border-t border-gray-700 dark:border-slate-800 transition-colors mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
               © {currentYear} Pachnanda and Associates. All rights reserved.

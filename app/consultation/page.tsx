@@ -9,7 +9,7 @@ export const metadata = {
 export default function ConsultationPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-blue-50 to-white section-padding">
+      <section className="bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-950 section-padding transition-colors duration-300">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h1 className="heading-primary text-center mb-4">
@@ -19,7 +19,7 @@ export default function ConsultationPage() {
               We offer free consultation for all time lengths. Whether you have a quick question or need comprehensive guidance, we are here to help.
             </p>
 
-            <div className="bg-white p-8 rounded-lg shadow-md mb-12">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl border border-transparent dark:border-slate-800 mb-12 transition-colors duration-300">
               <h2 className="heading-secondary mb-6">
                 How Our Consultation Works
               </h2>
@@ -31,10 +31,10 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-corporate-dark mb-2">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                       Reach Out to Us
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                       Contact us via phone, email, or the contact form. Our team will respond promptly to understand your needs.
                     </p>
                   </div>
@@ -42,15 +42,15 @@ export default function ConsultationPage() {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-corporate-blue bg-opacity-10 p-3 rounded-full">
-                      <FiClock className="w-6 h-6 text-corporate-blue" />
+                    <div className="bg-blue-50 dark:bg-blue-500/10 p-3 rounded-full">
+                      <FiClock className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-corporate-dark mb-2">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                       Schedule Your Consultation
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                       We'll arrange a convenient time for your consultation. There's no time limit—we'll take as much time as needed to address your concerns.
                     </p>
                   </div>
@@ -58,15 +58,15 @@ export default function ConsultationPage() {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-corporate-blue bg-opacity-10 p-3 rounded-full">
-                      <FiCheckCircle className="w-6 h-6 text-corporate-blue" />
+                    <div className="bg-blue-50 dark:bg-blue-500/10 p-3 rounded-full">
+                      <FiCheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-corporate-dark mb-2">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                       Get Expert Advice
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                       During the consultation, you'll receive professional guidance tailored to your specific situation. We'll explain your options clearly and help you make informed decisions.
                     </p>
                   </div>
@@ -74,7 +74,7 @@ export default function ConsultationPage() {
               </div>
             </div>
 
-            <div className="bg-corporate-blue text-white p-8 rounded-lg shadow-md">
+            <div className="bg-gradient-to-br from-blue-700 to-blue-900 dark:from-blue-900 dark:to-slate-800 text-white p-8 rounded-2xl shadow-xl transition-colors duration-300">
               <h2 className="text-2xl font-bold mb-4">
                 What You Can Discuss
               </h2>
@@ -106,11 +106,11 @@ export default function ConsultationPage() {
               </ul>
             </div>
 
-            <div className="mt-12 bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-corporate-dark mb-4 text-center">
+            <div className="mt-12 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl border border-transparent dark:border-slate-700 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
                 Ready to Get Started?
               </h3>
-              <p className="text-center text-gray-700 mb-6">
+              <p className="text-center text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                 Contact us today to schedule your free consultation. We are here to help you navigate your financial and compliance needs with confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

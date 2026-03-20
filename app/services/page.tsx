@@ -101,9 +101,9 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-blue-50 to-white section-padding">
+      <section className="bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-950 section-padding transition-colors duration-300">
         <div className="container-custom">
-          <h1 className="heading-primary text-center mb-4">
+          <h1 className="heading-primary text-center mb-6">
             Our Professional Services
           </h1>
           <p className="text-lead text-center max-w-3xl mx-auto mb-12">
@@ -112,25 +112,25 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding bg-white dark:bg-slate-950 transition-colors duration-300">
         <div className="container-custom">
           <div className="space-y-16">
             {services.map((service, index) => (
-              <div key={service.id} id={service.id} className="scroll-mt-20">
-                <div className="bg-white rounded-lg shadow-md p-8">
-                  <h2 className="heading-secondary mb-4">{service.title}</h2>
-                  <p className="text-lead text-gray-700 mb-8">{service.description}</p>
+              <div key={service.id} id={service.id} className="scroll-mt-28">
+                <div className="bg-gray-50 dark:bg-slate-900 rounded-2xl shadow-xl border border-transparent dark:border-slate-800 p-8 md:p-12 transition-colors duration-300">
+                  <h2 className="heading-secondary mb-4 text-3xl">{service.title}</h2>
+                  <p className="text-lead text-gray-700 dark:text-gray-300 mb-10 leading-relaxed">{service.description}</p>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
                     {service.items.map((item, itemIndex) => (
                       <div
                         key={itemIndex}
-                        className="border-l-4 border-corporate-blue pl-4 py-2"
+                        className="bg-white dark:bg-slate-800 border-l-4 border-l-blue-600 dark:border-l-blue-500 rounded-r-xl p-6 shadow-sm transition-all duration-300 hover:shadow-md"
                       >
-                        <h3 className="text-xl font-semibold text-corporate-dark mb-2">
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                           {item.name}
                         </h3>
-                        <p className="text-gray-600">{item.description}</p>
+                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{item.description}</p>
                       </div>
                     ))}
                   </div>
