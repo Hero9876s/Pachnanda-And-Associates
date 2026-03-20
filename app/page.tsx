@@ -3,6 +3,7 @@ import FounderImage from '@/components/FounderImage'
 import TrustMetrics from '@/components/TrustMetrics'
 import CTASection from '@/components/CTASection'
 import Testimonials from '@/components/Testimonials'
+import { FiClock } from 'react-icons/fi'
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
 
       {/* LEFT CONTENT */}
       <div>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-100 text-sm font-semibold mb-6 border border-blue-500/30 backdrop-blur-sm">
+          <FiClock className="w-4 h-4 text-blue-300 animate-pulse" />
+          Mon-Sat 10 A.M - 8 P.M
+        </div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 text-white tracking-tight leading-tight">
           Trusted Chartered Accountants Delivering <span className="text-blue-300">Financial Clarity</span>
         </h1>
