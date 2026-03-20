@@ -9,7 +9,7 @@ export default function ContactPage() {
     fullName: '',
     contactNumber: '',
     email: '',
-    country: '',
+    country: 'India',
     query: '',
   })
 
@@ -135,26 +135,13 @@ s
   Country <span className="text-red-500">*</span>
 </label>
 
-                  <select
+                  <input
+                    type="text"
                     name="country"
-                    value={formData.country}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:text-white transition-colors"
-                  >
-                    <option value="">Select your country</option>
-                    <option>India</option>
-                    <option>United States</option>
-                    <option>United Kingdom</option>
-                    <option>Canada</option>
-                    <option>Australia</option>
-                    <option>UAE</option>
-                    <option>Saudi Arabia</option>
-                    <option>Qatar</option>
-                    <option>Oman</option>
-                    <option>Kuwait</option>
-                    <option>Other</option>
-                  </select>
+                    value="India"
+                    readOnly
+                    className="w-full px-4 py-3 border rounded-lg bg-gray-50 text-gray-500 focus:outline-none cursor-default dark:bg-slate-800/60 dark:border-slate-700 dark:text-gray-400 transition-colors"
+                  />
                 </div>
 
                 <div>
